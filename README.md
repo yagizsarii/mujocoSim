@@ -127,6 +127,42 @@ cd ~/mujocoSim/projects/myProject/
 
    `If it worked, you could create and compile your custom project.`
    
+# XML File Preparation
+
+## Documentation
+
+For detailed information, please visit the official [documentation link](https://mujoco.readthedocs.io/en/latest/XMLreference.html)
+
+## Elements and SubElements 
+
+There are elements and subelements on xml syntax. The common used elements are listed bellow as hierarchical.
+
+- mujoco
+  - asset
+  - worldbody
+    - light
+    - geom
+    - body
+      - joint
+      - geom
+      - inertial
+      - body (optional `related with upper body element`)
+  - actuator
+    - motor
+    - position
+    - velocity
+  - sensor
+    - jointpos
+    - jointvel
+  - keyframe
+    - key
+  
+      
+    
+ 
+ 
+
+
 
 
    
