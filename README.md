@@ -8,7 +8,9 @@ The version that worked on is 2.2.1
 
 To check more detail please visit referred link above.
 
-And also during the study the Pranav Bhounsule's YouTube playlist was utilized. Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
+And also during the study the Pranav Bhounsule's YouTube playlist was utilized. 
+
+Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
 
 ---
 
