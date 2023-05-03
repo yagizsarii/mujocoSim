@@ -13,17 +13,42 @@ And also during the study the Pranav Bhounsule's YouTube playlist was utilized.
 Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
 
 ---
+<!-- TABLE OF CONTENTS -->
+# Contents
+
+<ol>
+ <li>
+   <a href="#getting-started">Getting Started</a>
+   <ul>
+     <li><a href="#installation">Installation</a></li>
+     <li><a href="#system-preparation">System Preparation</a></li>
+     <li><a href="#system-test">System Test</a></li>
+       <ul>
+         <li><a href="#simulation-gui-test">Simulation GUI Test</a></li>
+         <li><a href="#template-project-test">Template Project Test</a></li>
+       </ul>
+   </ul>
+ </li>
+ <li>
+   <a href="#working-on-projects">Working On Projects</a>
+   <ul>
+     <li><a href="#custom-project-preparation">Custom Project Preparation</a></li>
+ </li>
+</ol>
+
+
+---
 
 # Getting Started
 
 ## Installation
 
-#### Clone the repository
+   1. Clone the repository
 ```bash
 git clone https://github.com/yagizsarii/mujocoSim.git
 ```
    
-#### Install the prerequisites
+2. Install the prerequisites
 ```bash
 sudo apt install libglfw3-dev
 ```
@@ -75,17 +100,22 @@ chmod +x run_linux
 ## Custom Project Preparation
 
    1. Copy and paste the template folder and rename. (e.g. myProject)
+   
    2. Rename the hello.xml file. (e.g. firstproject.xml)
+   
    3. Edit the main.c file: The filename should be set the same as xml file. (e.g., char filename[] = "firstproject.xml";
+   
    4. Locate terminal to mujocoSim/projects/myProject/
 ```sh
 cd ~/mujocoSim/projects/myProject/
 ``` 
-   5. Run the compiler
+  
+  5. Run the compiler
 ```sh
 ./run_linux
-```  
-   
+``` 
+
+   `If it worked, you could create and compile your custom project.`
    
 
 
