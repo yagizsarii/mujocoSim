@@ -70,8 +70,21 @@ chmod +x run_linux
 
    `If it works, you can create and compile your custom project on next steps successfully.`
    
-
+# Working On Projects
    
+## Custom Project Preparation
+
+   1. Copy and paste the template folder and rename. (e.g. myProject)
+   2. Rename the hello.xml file. (e.g. firstproject.xml)
+   3. Edit the main.c file: The filename should be set the same as xml file. (e.g., char filename[] = "firstproject.xml";
+   4. Locate terminal to mujocoSim/projects/myProject/
+```sh
+cd ~/mujocoSim/projects/myProject/
+``` 
+   5. Run the compiler
+```sh
+./run_linux
+```  
    
    
 
