@@ -36,8 +36,18 @@ Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
  </li>
 </ol>
 
-
 ---
+
+# Roadmap
+
+- [x] Run the Simulation
+- [x] Create Your Own Project
+- [x] Examine xml Syntax
+    - [ ] Create a Manipulator
+    - [ ] Create Two Manipulators Together
+- [x] Examine Main Code
+    - [ ] Design Controller
+- [ ] Use Jacobinan for Inverse Kinematics
 
 # Getting Started
 
