@@ -19,7 +19,22 @@ Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
 ### Prebuilt binary
 Versioned release is available as precompiled binaries from the GitHub releases page as [V0_00_00](https://www.google.com.tr/), built for Linux (x86-64 and AArch64).
 
-## Setup Steps
+### Clone the repository
+
+   ```bash
+   git clone https://github.com/yagizsarii/mujocoSim.git
+   ```
+   
+### Install the prerequisites
+
+   ```bash
+   sudo apt install libglfw3-dev
+   ```
+   
+
+
+
+
 
 
 
