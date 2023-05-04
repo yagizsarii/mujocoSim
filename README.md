@@ -34,6 +34,12 @@ Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
    <ul>
      <li><a href="#custom-project-preparation">Custom Project Preparation</a></li>
  </li>
+ <li>
+  <a href="#xml-file-preparation">XML File Preparation</a>
+  <ul>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#elements-and-subelements">Elements and SubElements</a></li>
+ </li>
 </ol>
 
 ---
@@ -139,6 +145,8 @@ There are elements and subelements on xml syntax. The common used elements are l
 
 - mujoco
   - asset
+    - metarial
+    - mesh
   - worldbody
     - light
     - geom
@@ -156,6 +164,115 @@ There are elements and subelements on xml syntax. The common used elements are l
     - jointvel
   - keyframe
     - key
+
+---
+
+### mujoco
+
+ mujoco is the main element which includes all sub elements together.
+
+ 
+#### &nbsp; Attributes
+  
+  1. **model** : `string`
+  
+    The name of the model.
+
+---
+
+### asset
+
+ This is a grouping element for defining assets.
+
+#### &nbsp; No Attributes
+
+---
+
+### metarial
+
+ Materials are useful for adjusting appearance properties beyond color
+
+ 
+#### &nbsp; Attributes
+  
+  1. **name** : `string`
+  
+    Name of the material, used for referencing.
+    
+  2. **rgba** : `real(4)`
+
+    Color and transparency of the material.
+
+--- 
+
+### mesh
+
+  mesh can load  STL files, OBJ files or MSH files directly in the XML.
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string`
+  
+    Name of the mesh, used for referencing
+    
+  2. **file** : `string`
+
+    The file name from which the mesh will be loaded.
+
+--- 
+
+### worldbody
+
+   The element worldbody is used for the top-level body. It cannot have child elements inertial and joint, and also cannot have any attributes. It corresponds to the origin of the world frame
+  
+#### &nbsp; No Attributes
+ 
+--- 
+
+### light
+
+  This element creates a light, which moves with the body where it is defined. If it defines on worldbody, it will be fixed.
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string`
+  
+    Name of the light.
+    
+  2. **pos** : `real(3)`
+
+    Position of the light.
+
+  3. **dir** : `real(3)`
+
+    Direction of the light.
+
+---
+
+### geom
+
+  This element creates a geom, and attaches it rigidly to the body within which the geom is defined.
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the geom.
+    
+  2. **type** : `plane, hfield, sphere, capsule, ellipsoid, cylinder, box, mesh)`
+
+    Type of geometric shape
+
+  3. **size** : `real(3)`
+
+    Geom size parameters
+   
+  4. **pos** : `real(3)`
+
+    Position of the geom, specified in the frame of the parent body.
+
+---
+
   
       
     
