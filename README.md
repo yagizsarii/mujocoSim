@@ -33,12 +33,14 @@ Link: https://youtube.com/playlist?list=PLc7bpbeTIk758Ad3fkSywdxHWpBh9PM0G
    <a href="#working-on-projects">Working On Projects</a>
    <ul>
      <li><a href="#custom-project-preparation">Custom Project Preparation</a></li>
+   </ul>
  </li>
  <li>
   <a href="#xml-file-preparation">XML File Preparation</a>
   <ul>
     <li><a href="#documentation">Documentation</a></li>
     <li><a href="#elements-and-subelements">Elements and SubElements</a></li>
+  </ul>
  </li>
 </ol>
 
