@@ -361,25 +361,109 @@ There are elements and subelements on xml syntax. The common used elements are l
   
     Name of the actuator.
     
-  2. **joint** : `string`
+  2. **ctrllimited** : `false, true, auto`
 
-    If this attribute is specified, the actuator acts on the given joint.
+    If true, the control input to this actuator is automatically clamped to ctrlrange at runtime.
 
-  3. **diaginertia** : `real(3)`
+  3. **ctrlrange** : `real(2)`
 
-    Diagonal inertia matrix, expressing the body inertia relative to the inertial frame. 
+    Range for clamping the control input.  
+    
+  4. **joint** : `string`
+
+    Name of the joint which is related to actuator.
 
 ---
+
+### position
+
+  This element creates a direct-drive actuator. 
   
-      
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the actuator.
     
+  2. **joint** : `string`
+
+    Name of the joint which is related to actuator.
+    
+  3. **kp** : `real`
+
+    Position feedback gain.
+    
+---
  
+### velocity
+
+  This element creates a direct-drive actuator. 
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the actuator.
+    
+  2. **joint** : `string`
+
+    Name of the joint which is related to actuator.
+    
+  3. **kv** : `real`
+
+    Velocity feedback gain.
+
+---
  
+### sensor
 
+  This is a grouping element for sensor definitions.
+  
+#### &nbsp; No Attributes
 
+---
 
+### jointpos
 
-   
+  This element creates a direct-drive actuator. 
+  
+#### &nbsp; Attributes
+  
+  1. **name,** : `string` 
+  
+    Name of the sensor.
+    
+  2. **joint** : `string`
+
+    Name of the joint which is related to actuator.
+    
+  3. **noise** : `real`
+
+    The standard deviation of zero-mean Gaussian noise added to the sensor output, when the sensornoise attribute of flag is enabled.
+    
+---
+
+### jointvel
+
+  This element creates a direct-drive actuator. 
+  
+#### &nbsp; Attributes
+  
+  1. **name,** : `string` 
+  
+    Name of the sensor.
+    
+  2. **joint** : `string`
+
+    Name of the joint which is related to actuator.
+    
+  3. **noise** : `real`
+
+    The standard deviation of zero-mean Gaussian noise added to the sensor output, when the sensornoise attribute of flag is enabled.
+    
+---
+
+   **An example which includes all elements is added as an pendulum. To check, click [the link](https://www.google.com.tr/).**
    
    
    
