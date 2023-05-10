@@ -275,6 +275,101 @@ There are elements and subelements on xml syntax. The common used elements are l
 
 ---
 
+### body
+
+  This element is used to construct the kinematic tree. 
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the body.
+    
+  2. **pos** : `real(3)`
+
+    The 3D position of the body frame, in the parent coordinate frame. If undefined it defaults to (0,0,0).
+
+  3. **euler** : `real(3)`
+
+    Rotation angles around three coordinate axes.
+    
+   4. **quat** : `real(3)`
+
+    If the quaternion is known, this is the preferred was to specify the frame orientation because it does not involve conversions.
+
+---
+
+### joint
+
+  This element creates a joint. A joint creates motion degrees of freedom between the body where it is defined and the body’s parent.
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the joint.
+    
+  2. **type** : `(free, ball, slide, hinge)`
+
+    Type of the joint. 
+    
+    Free: Creates a free “joint” with three translational degrees of freedom followed by three rotational degrees of freedom. The rotation is represented as a unit quaternion. This joint type is only allowed in bodies that are children of the world body.
+    
+    Ball: Creates a ball joint with three rotational degrees of freedom. The rotation is represented as a unit quaternion.
+    
+    Slide: Creates a sliding or prismatic joint with one translational degree of freedom. Such joints are defined by a position and a sliding direction. 
+    
+    Hinge: Creates a hinge joint with one rotational degree of freedom. The rotation takes place around a specified axis through a specified position.
+
+---
+
+### inertial
+
+  This element specifies the mass and inertial properties of the body. If this element is not included in a given body, the inertial properties are inferred from the geoms attached to the body.
+  
+#### &nbsp; Attributes
+  
+  1. **pos** : `real(3)` 
+  
+    Position of the inertial frame. This attribute is required.
+    
+  2. **mass** : `real`
+
+    Mass of the body. Negative values are not allowed. 
+
+  3. **diaginertia** : `real(3)`
+
+    Diagonal inertia matrix, expressing the body inertia relative to the inertial frame. 
+
+---
+
+### actuator
+
+  This element creates a general actuator, providing full access to all actuator components and allowing the user to specify them independently.
+  
+#### &nbsp; No Attributes
+
+---
+
+### motor
+
+  This element creates a direct-drive actuator. 
+  
+#### &nbsp; Attributes
+  
+  1. **name** : `string` 
+  
+    Name of the actuator.
+    
+  2. **joint** : `string`
+
+    If this attribute is specified, the actuator acts on the given joint.
+
+  3. **diaginertia** : `real(3)`
+
+    Diagonal inertia matrix, expressing the body inertia relative to the inertial frame. 
+
+---
   
       
     
