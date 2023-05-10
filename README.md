@@ -463,7 +463,7 @@ There are elements and subelements on xml syntax. The common used elements are l
     
 ---
 
-   **An example which includes all elements is added as an pendulum. To check, click [the link](https://www.google.com.tr/).**
+   **An example which includes all elements is added as an pendulum. To check, click [the link](https://github.com/yagizsarii/mujocoSim/tree/main/projects/pendulum).**
    
    
    
